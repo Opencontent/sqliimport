@@ -1,0 +1,26 @@
+Corretta classe /sqliimport/classes/sqliimportitem.php
+
+From http://www.php.net/manual/en/function.serialize.php#96504
+If serializing objects to be stored into a postgresql database, the 'null byte' injected for private and protected members throws a wrench into the system. Even pg_escape_bytea() on the value, and storing the value as a binary type fails under certain circumstances.
+
+For a dirty work around:
+<?php
+
+$serialized_object = serialize($my_object);
+$safe_object = str_replace("\0", "~~NULL_BYTE~~", $serialized_object);
+
+?>
+
+this allows you to store the object in a readable text format as well. When reading the data back:
+
+<?php
+
+$serialized_object = str_replace("~~NULL_BYTE~~", "\0", $safe_object);
+$my_object = unserialize($serialized_object);
+
+?>
+
+The only gotcha's with this method is if your object member names or values may somehow contain the odd "~~NULL_BYTE~~" string. If that is the case, then str_replace() to a string that you are guaranteed not to have any where else in the string that serialize() returns.
+Also remember to define the class before calling unserialize().
+
+If you are storing session data into a postgresql database, then this workaround is an absolute must, because the $data passed to the session's write function is already serialized. 

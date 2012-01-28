@@ -1,0 +1,1878 @@
+<html>
+<head>
+<title>Docs For Class SQLIXMLInputParser</title>
+<link rel="stylesheet" type="text/css" href="../../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">sqliimport</td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                                        
+                              		  [ <a href="../../classtrees_sqliimport.html" class="menu">class tree: sqliimport</a> ]
+		  [ <a href="../../elementindex_sqliimport.html" class="menu">index: sqliimport</a> ]
+		  	    [ <a href="../../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../../li_default.html">default</a><br />
+              <a href="../../li_sqliimport.html">sqliimport</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../../sqliimport/_modules---sqliimport---addimport.php.html">		addimport.php
+		</a><br>
+			<a href="../../sqliimport/_modules---sqliimport---addscheduled.php.html">		addscheduled.php
+		</a><br>
+			<a href="../../sqliimport/_modules---sqliimport---alterimport.php.html">		alterimport.php
+		</a><br>
+			<a href="../../sqliimport/_ezinfo.php.html">		ezinfo.php
+		</a><br>
+			<a href="../../sqliimport/_modules---sqliimport---fatalerrorhandler.php.html">		fatalerrorhandler.php
+		</a><br>
+			<a href="../../sqliimport/_modules---sqliimport---list.php.html">		list.php
+		</a><br>
+			<a href="../../sqliimport/_modules---sqliimport---module.php.html">		module.php
+		</a><br>
+			<a href="../../sqliimport/_modules---sqliimport---purgelist.php.html">		purgelist.php
+		</a><br>
+			<a href="../../sqliimport/_modules---sqliimport---removescheduled.php.html">		removescheduled.php
+		</a><br>
+			<a href="../../sqliimport/_modules---sqliimport---scheduledlist.php.html">		scheduledlist.php
+		</a><br>
+			<a href="../../sqliimport/_modules---sqliimport---sigtermhandler.php.html">		sigtermhandler.php
+		</a><br>
+			<a href="../../sqliimport/_bin---php---sqlidoimport.php.html">		sqlidoimport.php
+		</a><br>
+			<a href="../../sqliimport/_classes---exceptions---sqliimportbaseexception.php.html">		sqliimportbaseexception.php
+		</a><br>
+			<a href="../../sqliimport/_classes---exceptions---sqliimportconfigexception.php.html">		sqliimportconfigexception.php
+		</a><br>
+			<a href="../../sqliimport/_classes---sqliimportfactory.php.html">		sqliimportfactory.php
+		</a><br>
+			<a href="../../sqliimport/_classes---sqliimportitem.php.html">		sqliimportitem.php
+		</a><br>
+			<a href="../../sqliimport/_classes---sqliimportlogger.php.html">		sqliimportlogger.php
+		</a><br>
+			<a href="../../sqliimport/_classes---exceptions---sqliimportruntimeexception.php.html">		sqliimportruntimeexception.php
+		</a><br>
+			<a href="../../sqliimport/_classes---sqliimporttoken.php.html">		sqliimporttoken.php
+		</a><br>
+			<a href="../../sqliimport/_classes---sqliimportutils.php.html">		sqliimportutils.php
+		</a><br>
+			<a href="../../sqliimport/_cronjobs---sqliimport_cleanup.php.html">		sqliimport_cleanup.php
+		</a><br>
+			<a href="../../sqliimport/_cronjobs---sqliimport_run.php.html">		sqliimport_run.php
+		</a><br>
+			<a href="../../sqliimport/_classes---sqlischeduledimport.php.html">		sqlischeduledimport.php
+		</a><br>
+	  </div><br />
+	subpackage <b>content</b><br>  <div class="package">
+			<a href="../../sqliimport/content/_classes---content---diffhandlers---isqlidiffhandler.php.html">		isqlidiffhandler.php
+		</a><br>
+			<a href="../../sqliimport/content/_classes---content---diffhandlers---sqlibinaryfilediffhandler.php.html">		sqlibinaryfilediffhandler.php
+		</a><br>
+			<a href="../../sqliimport/content/_classes---content---sqlicontent.php.html">		sqlicontent.php
+		</a><br>
+			<a href="../../sqliimport/content/_classes---content---sqlicontentexception.php.html">		sqlicontentexception.php
+		</a><br>
+			<a href="../../sqliimport/content/_classes---content---sqlicontentfiedset.php.html">		sqlicontentfiedset.php
+		</a><br>
+			<a href="../../sqliimport/content/_classes---content---sqlicontentfield.php.html">		sqlicontentfield.php
+		</a><br>
+			<a href="../../sqliimport/content/_classes---content---sqlicontentfieldsetholder.php.html">		sqlicontentfieldsetholder.php
+		</a><br>
+			<a href="../../sqliimport/content/_classes---content---options---sqlicontentoptions.php.html">		sqlicontentoptions.php
+		</a><br>
+			<a href="../../sqliimport/content/_classes---content---sqlicontentpublisher.php.html">		sqlicontentpublisher.php
+		</a><br>
+			<a href="../../sqliimport/content/_classes---content---sqlicontentutils.php.html">		sqlicontentutils.php
+		</a><br>
+			<a href="../../sqliimport/content/_classes---content---diffhandlers---sqlidefaultdiffhandler.php.html">		sqlidefaultdiffhandler.php
+		</a><br>
+			<a href="../../sqliimport/content/_classes---content---diffhandlers---sqliimagediffhandler.php.html">		sqliimagediffhandler.php
+		</a><br>
+			<a href="../../sqliimport/content/_classes---ezxmltext---input---handlers---sqlixmlinputparser.php.html">		sqlixmlinputparser.php
+		</a><br>
+	  </div><br />
+	subpackage <b>content-options</b><br>  <div class="package">
+			<a href="../../sqliimport/content-options/_classes---content---options---sqlicontentpublishoptions.php.html">		sqlicontentpublishoptions.php
+		</a><br>
+	  </div><br />
+	subpackage <b>location</b><br>  <div class="package">
+			<a href="../../sqliimport/location/_classes---location---sqlilocation.php.html">		sqlilocation.php
+		</a><br>
+			<a href="../../sqliimport/location/_classes---location---sqlilocationexception.php.html">		sqlilocationexception.php
+		</a><br>
+			<a href="../../sqliimport/location/_classes---location---sqlilocationset.php.html">		sqlilocationset.php
+		</a><br>
+	  </div><br />
+	subpackage <b>options</b><br>  <div class="package">
+			<a href="../../sqliimport/options/_classes---options---sqliimportoptions.php.html">		sqliimportoptions.php
+		</a><br>
+	  </div><br />
+	subpackage <b>sourcehandlers</b><br>  <div class="package">
+			<a href="../../sqliimport/sourcehandlers/_classes---sourcehandlers---isqliimporthandler.php.html">		isqliimporthandler.php
+		</a><br>
+			<a href="../../sqliimport/sourcehandlers/_classes---sourcehandlers---csv---sqlicsvdoc.php.html">		sqlicsvdoc.php
+		</a><br>
+			<a href="../../sqliimport/sourcehandlers/_classes---sourcehandlers---csv---sqlicsvexception.php.html">		sqlicsvexception.php
+		</a><br>
+			<a href="../../sqliimport/sourcehandlers/_classes---sourcehandlers---csv---sqlicsvoptions.php.html">		sqlicsvoptions.php
+		</a><br>
+			<a href="../../sqliimport/sourcehandlers/_classes---sourcehandlers---csv---sqlicsvrow.php.html">		sqlicsvrow.php
+		</a><br>
+			<a href="../../sqliimport/sourcehandlers/_classes---sourcehandlers---csv---sqlicsvrowset.php.html">		sqlicsvrowset.php
+		</a><br>
+			<a href="../../sqliimport/sourcehandlers/_classes---sourcehandlers---sqliimportabstracthandler.php.html">		sqliimportabstracthandler.php
+		</a><br>
+			<a href="../../sqliimport/sourcehandlers/_classes---sourcehandlers---options---sqliimporthandleroptions.php.html">		sqliimporthandleroptions.php
+		</a><br>
+			<a href="../../sqliimport/sourcehandlers/_classes---sourcehandlers---sqlirssimporthandler.php.html">		sqlirssimporthandler.php
+		</a><br>
+			<a href="../../sqliimport/sourcehandlers/_classes---sourcehandlers---xml---sqlixmlexception.php.html">		sqlixmlexception.php
+		</a><br>
+			<a href="../../sqliimport/sourcehandlers/_classes---sourcehandlers---xml---sqlixmloptions.php.html">		sqlixmloptions.php
+		</a><br>
+	  </div><br />
+	subpackage <b>sourchandlers</b><br>  <div class="package">
+			<a href="../../sqliimport/sourchandlers/_classes---sourcehandlers---xml---sqlixmlparser.php.html">		sqlixmlparser.php
+		</a><br>
+	  </div><br />
+      
+            <b>Interfaces:</b><br />
+        <div class="package">
+	content<br />	    &nbsp;&nbsp;		<a href="../../sqliimport/content/ISQLIDiffHandler.html">ISQLIDiffHandler</a><br />
+	  </div>
+  <div class="package">
+	sourcehandlers<br />	    &nbsp;&nbsp;		<a href="../../sqliimport/sourcehandlers/ISQLIImportHandler.html">ISQLIImportHandler</a><br />
+	  </div>
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../../sqliimport/SQLIImportBaseException.html">SQLIImportBaseException</a><br />
+	    		<a href="../../sqliimport/SQLIImportConfigException.html">SQLIImportConfigException</a><br />
+	    		<a href="../../sqliimport/SQLIImportFactory.html">SQLIImportFactory</a><br />
+	    		<a href="../../sqliimport/sqliimportInfo.html">sqliimportInfo</a><br />
+	    		<a href="../../sqliimport/SQLIImportItem.html">SQLIImportItem</a><br />
+	    		<a href="../../sqliimport/SQLIImportLogger.html">SQLIImportLogger</a><br />
+	    		<a href="../../sqliimport/SQLIImportRuntimeException.html">SQLIImportRuntimeException</a><br />
+	    		<a href="../../sqliimport/SQLIImportToken.html">SQLIImportToken</a><br />
+	    		<a href="../../sqliimport/SQLIImportUtils.html">SQLIImportUtils</a><br />
+	    		<a href="../../sqliimport/SQLIScheduledImport.html">SQLIScheduledImport</a><br />
+	  </div>
+  <div class="package">
+	content<br />	    &nbsp;&nbsp;		<a href="../../sqliimport/content/SQLIBinaryFileDiffHandler.html">SQLIBinaryFileDiffHandler</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/content/SQLIContent.html">SQLIContent</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/content/SQLIContentException.html">SQLIContentException</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/content/SQLIContentField.html">SQLIContentField</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/content/SQLIContentFieldset.html">SQLIContentFieldset</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/content/SQLIContentFieldsetHolder.html">SQLIContentFieldsetHolder</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/content/SQLIContentOptions.html">SQLIContentOptions</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/content/SQLIContentPublisher.html">SQLIContentPublisher</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/content/SQLIContentUtils.html">SQLIContentUtils</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/content/SQLIDefaultDiffHandler.html">SQLIDefaultDiffHandler</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/content/SQLIImageDiffHandler.html">SQLIImageDiffHandler</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/content/SQLIXMLInputParser.html">SQLIXMLInputParser</a><br />
+	  </div>
+  <div class="package">
+	sourcehandlers<br />	    &nbsp;&nbsp;		<a href="../../sqliimport/sourcehandlers/SQLICSVDoc.html">SQLICSVDoc</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/sourcehandlers/SQLICSVException.html">SQLICSVException</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/sourcehandlers/SQLICSVOptions.html">SQLICSVOptions</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/sourcehandlers/SQLICSVRow.html">SQLICSVRow</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/sourcehandlers/SQLICSVRowSet.html">SQLICSVRowSet</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/sourcehandlers/SQLIImportAbstractHandler.html">SQLIImportAbstractHandler</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/sourcehandlers/SQLIImportHandlerOptions.html">SQLIImportHandlerOptions</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/sourcehandlers/SQLIRSSImportHandler.html">SQLIRSSImportHandler</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/sourcehandlers/SQLIXMLException.html">SQLIXMLException</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/sourcehandlers/SQLIXMLOptions.html">SQLIXMLOptions</a><br />
+	  </div>
+  <div class="package">
+	content-options<br />	    &nbsp;&nbsp;		<a href="../../sqliimport/content-options/SQLIContentPublishOptions.html">SQLIContentPublishOptions</a><br />
+	  </div>
+  <div class="package">
+	options<br />	    &nbsp;&nbsp;		<a href="../../sqliimport/options/SQLIImportOptions.html">SQLIImportOptions</a><br />
+	  </div>
+  <div class="package">
+	location<br />	    &nbsp;&nbsp;		<a href="../../sqliimport/location/SQLILocation.html">SQLILocation</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/location/SQLILocationException.html">SQLILocationException</a><br />
+	    &nbsp;&nbsp;		<a href="../../sqliimport/location/SQLILocationSet.html">SQLILocationSet</a><br />
+	  </div>
+  <div class="package">
+	sourchandlers<br />	    &nbsp;&nbsp;		<a href="../../sqliimport/sourchandlers/SQLIXMLParser.html">SQLIXMLParser</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: SQLIXMLInputParser</h1>
+Source Location: /classes/ezxmltext/input/handlers/sqlixmlinputparser.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre>eZXMLInputParser
+   |
+   --SQLIXMLInputParser</pre><br />
+<div class="description">XML input parser to be used to add rich text (HTML) to a content.</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+        </ul>
+
+
+
+
+    
+
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#var$anchorAsAttribute">$anchorAsAttribute</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#var$customTagList">$customTagList</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#var$deletedEmbeddedNodeIDArray">$deletedEmbeddedNodeIDArray</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#var$deletedEmbeddedObjectIDArray">$deletedEmbeddedObjectIDArray</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#var$embeddedObjectIDArray">$embeddedObjectIDArray</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#var$InputTags">$InputTags</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#var$linkedObjectIDArray">$linkedObjectIDArray</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#var$OutputTags">$OutputTags</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#var$thrashedEmbeddedObjectIDArray">$thrashedEmbeddedObjectIDArray</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#var$urlIDArray">$urlIDArray</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_consts">Constants</a></h3>
+<ul>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#constHTML_CLASS_REGEX">HTML_CLASS_REGEX</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodappendLineParagraph">appendLineParagraph</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodappendParagraph">appendParagraph</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodbreakInlineFlow">breakInlineFlow</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodcustomTagIsEnabled">customTagIsEnabled</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodelementStylesToAttribute">elementStylesToAttribute</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodeZOEInputParser">eZOEInputParser</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodgetDeletedEmbedIDArray">getDeletedEmbedIDArray</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodgetEmbeddedObjectIDArray">getEmbeddedObjectIDArray</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodgetLinkedObjectIDArray">getLinkedObjectIDArray</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodgetUrlIDArray">getUrlIDArray</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodinitHandlerCustom">initHandlerCustom</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodinitHandlerHeader">initHandlerHeader</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodparsingHandlerLiteral">parsingHandlerLiteral</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodparsingHandlerParagraph">parsingHandlerParagraph</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodprocess">process</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodprocessAttributesBySchema">processAttributesBySchema</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodpublishHandlerEmbed">publishHandlerEmbed</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodpublishHandlerLink">publishHandlerLink</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodstructHandlerBr">structHandlerBr</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodstructHandlerCustom">structHandlerCustom</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodstructHandlerHeader">structHandlerHeader</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodstructHandlerLists">structHandlerLists</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodstructHandlerParagraph">structHandlerParagraph</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodstructHandlerText">structHandlerText</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodtagClassNamesCleanup">tagClassNamesCleanup</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodtagNameCustomHelper">tagNameCustomHelper</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodtagNameDivnImg">tagNameDivnImg</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodtagNameHeader">tagNameHeader</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodtagNameLink">tagNameLink</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodtagNameSpan">tagNameSpan</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodtagNameTable">tagNameTable</a></li>
+    <li><a href="../../sqliimport/content/SQLIXMLInputParser.html#methodtransformStyles">transformStyles</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 19]<br />
+XML input parser to be used to add rich text (HTML) to a content.<br /><br /><p>Duplicated from ezoe extension.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="http://svn.projects.ez.no/ezoe/trunk/ezoe/ezxmltext/handlers/input/ezoeinputparser.php">http://svn.projects.ez.no/ezoe/trunk/ezoe/ezxmltext/handlers/input/ezoeinputparser.php</a></td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$customTagList"></a>
+	<p></p>
+	<h4>static $customTagList = <span class="value">&nbsp;null</span></h4>
+	<p>[line 1379]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$anchorAsAttribute"></a>
+	<p></p>
+	<h4>$anchorAsAttribute = <span class="value">&nbsp;false</span></h4>
+	<p>[line 1377]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$deletedEmbeddedNodeIDArray"></a>
+	<p></p>
+	<h4>$deletedEmbeddedNodeIDArray = <span class="value">array()</span></h4>
+	<p>[line 1372]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$deletedEmbeddedObjectIDArray"></a>
+	<p></p>
+	<h4>$deletedEmbeddedObjectIDArray = <span class="value">array()</span></h4>
+	<p>[line 1373]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$embeddedObjectIDArray"></a>
+	<p></p>
+	<h4>$embeddedObjectIDArray = <span class="value">array()</span></h4>
+	<p>[line 1371]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$InputTags"></a>
+	<p></p>
+	<h4>$InputTags = <span class="value">array(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'section'&nbsp;=&gt;&nbsp;array(&nbsp;'name'&nbsp;=&gt;&nbsp;'section'&nbsp;),'b'=&gt;array('name'=&gt;'strong'),'bold'=&gt;array('name'=&gt;'strong'),'strong'=&gt;array('name'=&gt;'strong'),'i'=&gt;array('name'=&gt;'emphasize'),'em'=&gt;array('name'=&gt;'emphasize'),'pre'=&gt;array('name'=&gt;'literal'),'div'=&gt;array('nameHandler'=&gt;'tagNameDivnImg'),'u'=&gt;array('nameHandler'=&gt;'tagNameCustomHelper'),'sub'=&gt;array('nameHandler'=&gt;'tagNameCustomHelper'),'sup'=&gt;array('nameHandler'=&gt;'tagNameCustomHelper'),'img'=&gt;array('nameHandler'=&gt;'tagNameDivnImg','noChildren'=&gt;true),'h1'=&gt;array('nameHandler'=&gt;'tagNameHeader'),'h2'=&gt;array('nameHandler'=&gt;'tagNameHeader'),'h3'=&gt;array('nameHandler'=&gt;'tagNameHeader'),'h4'=&gt;array('nameHandler'=&gt;'tagNameHeader'),'h5'=&gt;array('nameHandler'=&gt;'tagNameHeader'),'h6'=&gt;array('nameHandler'=&gt;'tagNameHeader'),'p'=&gt;array('name'=&gt;'paragraph'),'br'=&gt;array('name'=&gt;'br','noChildren'=&gt;true),'span'=&gt;array('nameHandler'=&gt;'tagNameSpan'),'table'=&gt;array('nameHandler'=&gt;'tagNameTable'),'td'=&gt;array('name'=&gt;'td'),'tr'=&gt;array('name'=&gt;'tr'),'th'=&gt;array('name'=&gt;'th'),'ol'=&gt;array('name'=&gt;'ol'),'ul'=&gt;array('name'=&gt;'ul'),'li'=&gt;array('name'=&gt;'li'),'a'=&gt;array('nameHandler'=&gt;'tagNameLink'),'link'=&gt;array('nameHandler'=&gt;'tagNameLink'),//&nbsp;Stubs&nbsp;for&nbsp;not&nbsp;supported&nbsp;tags.<br>
+'tbody'=&gt;array('name'=&gt;''),'thead'=&gt;array('name'=&gt;''),'tfoot'=&gt;array('name'=&gt;''))</span></h4>
+	<p>[line 32]</p>
+  Maps input tags (html) to a output tag or a hander to  decide what kind of ezxml tag to use.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$linkedObjectIDArray"></a>
+	<p></p>
+	<h4>$linkedObjectIDArray = <span class="value">array()</span></h4>
+	<p>[line 1370]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$OutputTags"></a>
+	<p></p>
+	<h4>$OutputTags = <span class="value">array(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'section'&nbsp;&nbsp;&nbsp;=&gt;&nbsp;array(),'embed'=&gt;array('initHandler'=&gt;'transformStyles','structHandler'=&gt;'appendLineParagraph','publishHandler'=&gt;'publishHandlerEmbed','attributes'=&gt;array('alt'=&gt;'size','html_id'=&gt;'xhtml:id')),'embed-inline'=&gt;array('initHandler'=&gt;'transformStyles','structHandler'=&gt;'appendLineParagraph','publishHandler'=&gt;'publishHandlerEmbed','attributes'=&gt;array('alt'=&gt;'size','html_id'=&gt;'xhtml:id')),'table'=&gt;array('initHandler'=&gt;'transformStyles','structHandler'=&gt;'appendParagraph','attributes'=&gt;array('border'=&gt;false,'ezborder'=&gt;'border')),'tr'=&gt;array(),'td'=&gt;array('initHandler'=&gt;'transformStyles','attributes'=&gt;array('width'=&gt;'xhtml:width','colspan'=&gt;'xhtml:colspan','rowspan'=&gt;'xhtml:rowspan')),'th'=&gt;array('initHandler'=&gt;'transformStyles','attributes'=&gt;array('width'=&gt;'xhtml:width','colspan'=&gt;'xhtml:colspan','rowspan'=&gt;'xhtml:rowspan')),'ol'=&gt;array('structHandler'=&gt;'structHandlerLists'),'ul'=&gt;array('structHandler'=&gt;'structHandlerLists'),'li'=&gt;array('autoCloseOn'=&gt;array('li')),'header'=&gt;array('initHandler'=&gt;'initHandlerHeader','autoCloseOn'=&gt;array('paragraph'),'structHandler'=&gt;'structHandlerHeader'),'paragraph'=&gt;array('parsingHandler'=&gt;'parsingHandlerParagraph','autoCloseOn'=&gt;array('paragraph'),'initHandler'=&gt;'transformStyles','structHandler'=&gt;'structHandlerParagraph'),'line'=&gt;array(),'br'=&gt;array('parsingHandler'=&gt;'breakInlineFlow','structHandler'=&gt;'structHandlerBr','attributes'=&gt;false),'literal'=&gt;array('parsingHandler'=&gt;'parsingHandlerLiteral','structHandler'=&gt;'appendParagraph','attributes'=&gt;array('class'=&gt;'class')),'strong'=&gt;array('structHandler'=&gt;'appendLineParagraph'),'emphasize'=&gt;array('structHandler'=&gt;'appendLineParagraph'),'link'=&gt;array('structHandler'=&gt;'appendLineParagraph','publishHandler'=&gt;'publishHandlerLink','attributes'=&gt;array('title'=&gt;'xhtml:title','id'=&gt;'xhtml:id')),'anchor'=&gt;array('structHandler'=&gt;'appendLineParagraph'),'custom'=&gt;array('initHandler'=&gt;'initHandlerCustom','structHandler'=&gt;'structHandlerCustom'),'#text'=&gt;array('structHandler'=&gt;'structHandlerText'))</span></h4>
+	<p>[line 77]</p>
+  Maps output tags (ezxml) to varius handlers at different stages  decide what kind of ezxml tag to use.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$thrashedEmbeddedObjectIDArray"></a>
+	<p></p>
+	<h4>$thrashedEmbeddedObjectIDArray = <span class="value">array()</span></h4>
+	<p>[line 1374]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$urlIDArray"></a>
+	<p></p>
+	<h4>$urlIDArray = <span class="value">array()</span></h4>
+	<p>[line 1369]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+  <hr />
+	<a name="methodcustomTagIsEnabled"></a>
+	<h3>static method customTagIsEnabled <span class="smalllinenumber">[line 1329]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>static bool customTagIsEnabled(
+string
+$name)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Check if a custom tag is enabled<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodelementStylesToAttribute"></a>
+	<h3>static method elementStylesToAttribute <span class="smalllinenumber">[line 1345]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>static void elementStylesToAttribute(
+
+$element)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Trying to convert CSS rules to XML attributes  (for the case of pasting from external source)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtagClassNamesCleanup"></a>
+	<h3>static method tagClassNamesCleanup <span class="smalllinenumber">[line 376]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>static string tagClassNamesCleanup(
+string
+$className)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		tagClassNamesCleanup  Used by init handlers, removes any oe/tinMCE/browser specific classes and trims the result.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Cleaned and trimmed class name</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$className</b>&nbsp;&nbsp;</td>
+        <td>'Dirty' class name as provided by TinyMCE</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+
+  <hr />
+	<a name="methodappendLineParagraph"></a>
+	<h3>method appendLineParagraph <span class="smalllinenumber">[line 593]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array appendLineParagraph(
+DOMElement
+$element, DOMElement
+$newParent)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		appendLineParagraph (Structure handler, pass 2 after childre tags)  Structure handler for inline nodes.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>changes structure if it contains 'result' key</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$newParent</b>&nbsp;&nbsp;</td>
+        <td>node that are going to become new parent.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodappendParagraph"></a>
+	<h3>method appendParagraph <span class="smalllinenumber">[line 671]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array appendParagraph(
+DOMElement
+$element, DOMElement
+$newParent)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		appendParagraph (Structure handler, pass 2 after childre tags)  Structure handler for in-paragraph nodes.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>changes structure if it contains 'result' key</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$newParent</b>&nbsp;&nbsp;</td>
+        <td>node that are going to become new parent.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodbreakInlineFlow"></a>
+	<h3>method breakInlineFlow <span class="smalllinenumber">[line 471]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool|null breakInlineFlow(
+DOMElement
+$element, 
+&$param, array
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		breakInlineFlow (parsing handler, pass 1)  handle flow around <br /> tags, legazy from oe 4.x<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$param</b>&nbsp;&nbsp;</td>
+        <td>parameters for xml element</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$param</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodeZOEInputParser"></a>
+	<h3>method eZOEInputParser <span class="smalllinenumber">[line 160]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void eZOEInputParser(
+[int
+$validateErrorLevel = eZXMLInputParser::ERROR_NONE], [int
+$detectErrorLevel = eZXMLInputParser::ERROR_NONE], [bool
+$parseLineBreaks = false], [bool
+$removeDefaultAttrs = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor  For more info see eZXMLInputParser::eZXMLInputParser()<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$validateErrorLevel</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$detectErrorLevel</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$parseLineBreaks</b>&nbsp;&nbsp;</td>
+        <td>flag if line breaks should be given meaning or not</td>
+      </tr>
+          <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$removeDefaultAttrs</b>&nbsp;&nbsp;</td>
+        <td>signal if attributes of default value should not be saved.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetDeletedEmbedIDArray"></a>
+	<h3>method getDeletedEmbedIDArray <span class="smalllinenumber">[line 1311]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getDeletedEmbedIDArray(
+[bool
+$includeTrash = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get list over currently deleted embeded objects, nodes and (optionally) objects in trash<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$includeTrash</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEmbeddedObjectIDArray"></a>
+	<h3>method getEmbeddedObjectIDArray <span class="smalllinenumber">[line 1295]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getEmbeddedObjectIDArray(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetLinkedObjectIDArray"></a>
+	<h3>method getLinkedObjectIDArray <span class="smalllinenumber">[line 1300]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getLinkedObjectIDArray(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetUrlIDArray"></a>
+	<h3>method getUrlIDArray <span class="smalllinenumber">[line 1290]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getUrlIDArray(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodinitHandlerCustom"></a>
+	<h3>method initHandlerCustom <span class="smalllinenumber">[line 539]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool|null initHandlerCustom(
+DOMElement
+$element, 
+&$params, array
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		initHandlerCustom (init handler, pass 2 before childre tags)  seesm to be doing nothing<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$param</b>&nbsp;&nbsp;</td>
+        <td>parameters for xml element</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$params</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodinitHandlerHeader"></a>
+	<h3>method initHandlerHeader <span class="smalllinenumber">[line 556]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool|null initHandlerHeader(
+DOMElement
+$element, 
+&$params, array
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		initHandlerHeader (init handler, pass 2 before childre tags)  sets anchor as attribute if setting is enabled<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$param</b>&nbsp;&nbsp;</td>
+        <td>parameters for xml element</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$params</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodparsingHandlerLiteral"></a>
+	<h3>method parsingHandlerLiteral <span class="smalllinenumber">[line 389]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool|null parsingHandlerLiteral(
+DOMElement
+$element, 
+&$param, array
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		parsingHandlerLiteral (parsing handler, pass 1)  parse content of literal tag so tags are threated like text.<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$param</b>&nbsp;&nbsp;</td>
+        <td>parameters for xml element</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$param</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodparsingHandlerParagraph"></a>
+	<h3>method parsingHandlerParagraph <span class="smalllinenumber">[line 431]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool|null parsingHandlerParagraph(
+DOMElement
+$element, 
+&$param, array
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		parsingHandlerParagraph (parsing handler, pass 1)  parse content of paragraph tag to fix empty paragraphs issues.<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$param</b>&nbsp;&nbsp;</td>
+        <td>parameters for xml element</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$param</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodprocess"></a>
+	<h3>method process <span class="smalllinenumber">[line 182]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>false|DOMDocument process(
+string
+$text, [bool
+$createRootNode = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Process html text and transform it to xml.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$text</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$createRootNode</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodprocessAttributesBySchema"></a>
+	<h3>method processAttributesBySchema <span class="smalllinenumber">[line 1265]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void processAttributesBySchema(
+DOMElement
+$element)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		processAttributesBySchema  Parses customattributes attribute and splits it into actual  custom: xml attributes, passes processing of normal attributes  to parent class.<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpublishHandlerEmbed"></a>
+	<h3>method publishHandlerEmbed <span class="smalllinenumber">[line 1214]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>null|array publishHandlerEmbed(
+DOMElement
+$element, 
+&$params, array
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		publishHandlerEmbed (Publish handler, pass 2 after schema validation)  Publish handler for embed element, convert id to [object|node]_id parameter,  fixes align=middle value (if embed was image) and tries to map css to attributes<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>changes structure if it contains 'result' key</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$param</b>&nbsp;&nbsp;</td>
+        <td>parameters for xml element</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$params</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpublishHandlerLink"></a>
+	<h3>method publishHandlerLink <span class="smalllinenumber">[line 1070]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>null|array publishHandlerLink(
+DOMElement
+$element, 
+&$params, array
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		publishHandlerLink (Publish handler, pass 2 after schema validation)  Publish handler for link element, converts href to [object|node|link]_id.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>changes structure if it contains 'result' key</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$param</b>&nbsp;&nbsp;</td>
+        <td>parameters for xml element</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$params</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodstructHandlerBr"></a>
+	<h3>method structHandlerBr <span class="smalllinenumber">[line 653]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array structHandlerBr(
+DOMElement
+$element, DOMElement
+$newParent)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		structHandlerBr (Structure handler, pass 2 after childre tags)  Structure handler for temporary <br /> elements<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>changes structure if it contains 'result' key</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$newParent</b>&nbsp;&nbsp;</td>
+        <td>node that are going to become new parent.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodstructHandlerCustom"></a>
+	<h3>method structHandlerCustom <span class="smalllinenumber">[line 935]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array structHandlerCustom(
+DOMElement
+$element, DOMElement
+$newParent)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		structHandlerCustom (Structure handler, pass 2 after childre tags)  Structure handler for custom tag.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>changes structure if it contains 'result' key</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$newParent</b>&nbsp;&nbsp;</td>
+        <td>node that are going to become new parent.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodstructHandlerHeader"></a>
+	<h3>method structHandlerHeader <span class="smalllinenumber">[line 831]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array structHandlerHeader(
+DOMElement
+$element, DOMElement
+$newParent)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		structHandlerHeader (Structure handler, pass 2 after childre tags)  Structure handler for header tag.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>changes structure if it contains 'result' key</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$newParent</b>&nbsp;&nbsp;</td>
+        <td>node that are going to become new parent.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodstructHandlerLists"></a>
+	<h3>method structHandlerLists <span class="smalllinenumber">[line 966]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array structHandlerLists(
+DOMElement
+$element, DOMElement
+$newParent)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		structHandlerLists (Structure handler, pass 2 after childre tags)  Structure handler for ul|ol tags.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>changes structure if it contains 'result' key</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$newParent</b>&nbsp;&nbsp;</td>
+        <td>node that are going to become new parent.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodstructHandlerParagraph"></a>
+	<h3>method structHandlerParagraph <span class="smalllinenumber">[line 1030]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array structHandlerParagraph(
+DOMElement
+$element, DOMElement
+$newParent)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		structHandlerParagraph (Structure handler, pass 2 after childre tags)  Structure handler for paragraph tag.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>changes structure if it contains 'result' key</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$newParent</b>&nbsp;&nbsp;</td>
+        <td>node that are going to become new parent.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodstructHandlerText"></a>
+	<h3>method structHandlerText <span class="smalllinenumber">[line 719]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array structHandlerText(
+DOMElement
+$element, DOMElement
+$newParent)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		structHandlerText (Structure handler, pass 2 after childre tags)  Structure handler for #text.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>changes structure if it contains 'result' key</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$newParent</b>&nbsp;&nbsp;</td>
+        <td>node that are going to become new parent.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtagNameCustomHelper"></a>
+	<h3>method tagNameCustomHelper <span class="smalllinenumber">[line 350]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string tagNameCustomHelper(
+string
+$tagName, 
+&$attributes, array
+$attributes)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		tagNameCustomHelper (tag mapping handler)  Handles u|sub|sup tags and maps them to custom tag if they are enabled<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>name of ezxml tag or blank (then tag is removed, but not it's content)</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$tagName</b>&nbsp;&nbsp;</td>
+        <td>name of input (xhtml) tag</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$attributes</b>&nbsp;&nbsp;</td>
+        <td>byref value of tag attributes</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$attributes</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtagNameDivnImg"></a>
+	<h3>method tagNameDivnImg <span class="smalllinenumber">[line 262]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string tagNameDivnImg(
+string
+$tagName, 
+&$attributes, array
+$attributes)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		tagNameDivnImg (tag mapping handler)  Handles div|img tags and maps them to embed|embed-inline|custom tag<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>name of ezxml tag or blank (then tag is removed, but not it's content)</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$tagName</b>&nbsp;&nbsp;</td>
+        <td>name of input (xhtml) tag</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$attributes</b>&nbsp;&nbsp;</td>
+        <td>byref value of tag attributes</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$attributes</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtagNameHeader"></a>
+	<h3>method tagNameHeader <span class="smalllinenumber">[line 228]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string tagNameHeader(
+string
+$tagName, 
+&$attributes, array
+$attributes)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		tagNameHeader (tag mapping handler)  Handles H[1-6] tags and maps them to header tag<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>name of ezxml tag or blank (then tag is removed, but not it's content)</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$tagName</b>&nbsp;&nbsp;</td>
+        <td>name of input (xhtml) tag</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$attributes</b>&nbsp;&nbsp;</td>
+        <td>byref value of tag attributes</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$attributes</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtagNameLink"></a>
+	<h3>method tagNameLink <span class="smalllinenumber">[line 302]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string tagNameLink(
+string
+$tagName, 
+&$attributes, array
+$attributes)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		tagNameLink (tag mapping handler)  Handles a|link tags and maps them to link|anchor tag<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>name of ezxml tag or blank (then tag is removed, but not it's content)</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$tagName</b>&nbsp;&nbsp;</td>
+        <td>name of input (xhtml) tag</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$attributes</b>&nbsp;&nbsp;</td>
+        <td>byref value of tag attributes</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$attributes</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtagNameSpan"></a>
+	<h3>method tagNameSpan <span class="smalllinenumber">[line 198]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string tagNameSpan(
+string
+$tagName, 
+&$attributes, array
+$attributes)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		tagNameSpan (tag mapping handler)  Handles span tag and maps it to embed|custom|strong|emphasize|custom.underline  Reuses eZOEInputParser::tagNameDivnImg() for embed and custom tag mapping.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>name of ezxml tag or blank (then tag is removed, but not it's content)</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$tagName</b>&nbsp;&nbsp;</td>
+        <td>name of input (xhtml) tag</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$attributes</b>&nbsp;&nbsp;</td>
+        <td>byref value of tag attributes</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$attributes</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtagNameTable"></a>
+	<h3>method tagNameTable <span class="smalllinenumber">[line 242]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string tagNameTable(
+string
+$tagName, 
+&$attributes, array
+$attributes)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		tagNameHeader (tag mapping handler)  Handles H[1-6] tags and maps them to header tag<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>name of ezxml tag or blank (then tag is removed, but not it's content)</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$tagName</b>&nbsp;&nbsp;</td>
+        <td>name of input (xhtml) tag</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$attributes</b>&nbsp;&nbsp;</td>
+        <td>byref value of tag attributes</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$attributes</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtransformStyles"></a>
+	<h3>method transformStyles <span class="smalllinenumber">[line 579]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>null|array transformStyles(
+DOMElement
+$element, 
+&$params, array
+$params)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		transformStyles (init handler, pass 2 before childre tags)  tryes to convert css styles to attributes.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>changes structure if it contains 'result' key</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">DOMElement&nbsp;&nbsp;</td>
+        <td><b>$element</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>&$params</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+<hr />
+<a name="class_consts"></a>
+<h3>Class Constants</h3>
+<div class="tags">
+	<a name="constHTML_CLASS_REGEX"></a>
+	<p></p>
+	<h4>HTML_CLASS_REGEX = <span class="value">&nbsp;&quot;/(webkit-[\w\-]+|Apple-[\w\-]+|mceItem\w+|ezoeItem\w+|mceVisualAid)/i&quot;</span></h4>
+	<p>[line 24]</p>
+  Used to strip out ezoe, tinymce &amp; browser specific classes<br /><br />
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Mon, 27 Sep 2010 16:39:17 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,462 @@
+<html>
+<head>
+<title>phpDocumentor Parser Errors and Warnings</title>
+<link rel="stylesheet" type="text/css" href="media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">default</td>
+  </tr>
+  <tr><td class="header_line"><img src="media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                                                  		  [ <a href="classtrees_default.html" class="menu">class tree: default</a> ]
+		  [ <a href="elementindex_default.html" class="menu">index: default</a> ]
+		  	    [ <a href="elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="li_default.html">default</a><br />
+              <a href="li_sqliimport.html">sqliimport</a><br />
+            <br /><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<a href="#Post-parsing">Post-parsing</a><br>
+<a href="#addscheduled.php">addscheduled.php</a><br>
+<a href="#alterimport.php">alterimport.php</a><br>
+<a href="#content.php">content.php</a><br>
+<a href="#contentcreate.php">contentcreate.php</a><br>
+<a href="#contentremove.php">contentremove.php</a><br>
+<a href="#cronjob.ini.append.php">cronjob.ini.append.php</a><br>
+<a href="#csv.php">csv.php</a><br>
+<a href="#design.ini.append.php">design.ini.append.php</a><br>
+<a href="#ezinfo.php">ezinfo.php</a><br>
+<a href="#ezpendingactions.php">ezpendingactions.php</a><br>
+<a href="#fatalerrorhandler.php">fatalerrorhandler.php</a><br>
+<a href="#isqlidiffhandler.php">isqlidiffhandler.php</a><br>
+<a href="#isqliimporthandler.php">isqliimporthandler.php</a><br>
+<a href="#list.php">list.php</a><br>
+<a href="#menu.ini.append.php">menu.ini.append.php</a><br>
+<a href="#module.ini.append.php">module.ini.append.php</a><br>
+<a href="#module.php">module.php</a><br>
+<a href="#purgelist.php">purgelist.php</a><br>
+<a href="#removescheduled.php">removescheduled.php</a><br>
+<a href="#scheduledlist.php">scheduledlist.php</a><br>
+<a href="#scriptinit.php">scriptinit.php</a><br>
+<a href="#sigtermhandler.php">sigtermhandler.php</a><br>
+<a href="#site.ini.append.php">site.ini.append.php</a><br>
+<a href="#sqlibinaryfilediffhandler.php">sqlibinaryfilediffhandler.php</a><br>
+<a href="#sqlicontent.php">sqlicontent.php</a><br>
+<a href="#sqlicontentexception.php">sqlicontentexception.php</a><br>
+<a href="#sqlicontentfiedset.php">sqlicontentfiedset.php</a><br>
+<a href="#sqlicontentfield.php">sqlicontentfield.php</a><br>
+<a href="#sqlicontentfieldsetholder.php">sqlicontentfieldsetholder.php</a><br>
+<a href="#sqlicontentoptions.php">sqlicontentoptions.php</a><br>
+<a href="#sqlicontentpublisher.php">sqlicontentpublisher.php</a><br>
+<a href="#sqlicontentpublishoptions.php">sqlicontentpublishoptions.php</a><br>
+<a href="#sqlicontentutils.php">sqlicontentutils.php</a><br>
+<a href="#sqlicsvdoc.php">sqlicsvdoc.php</a><br>
+<a href="#sqlicsvexception.php">sqlicsvexception.php</a><br>
+<a href="#sqlicsvoptions.php">sqlicsvoptions.php</a><br>
+<a href="#sqlicsvrow.php">sqlicsvrow.php</a><br>
+<a href="#sqlicsvrowset.php">sqlicsvrowset.php</a><br>
+<a href="#sqlidefaultdiffhandler.php">sqlidefaultdiffhandler.php</a><br>
+<a href="#sqlidoimport.php">sqlidoimport.php</a><br>
+<a href="#sqliimagediffhandler.php">sqliimagediffhandler.php</a><br>
+<a href="#sqliimport.ini.append.php">sqliimport.ini.append.php</a><br>
+<a href="#sqliimportabstracthandler.php">sqliimportabstracthandler.php</a><br>
+<a href="#sqliimportbaseexception.php">sqliimportbaseexception.php</a><br>
+<a href="#sqliimportconfigexception.php">sqliimportconfigexception.php</a><br>
+<a href="#sqliimportfactory.php">sqliimportfactory.php</a><br>
+<a href="#sqliimporthandleroptions.php">sqliimporthandleroptions.php</a><br>
+<a href="#sqliimportitem.php">sqliimportitem.php</a><br>
+<a href="#sqliimportlogger.php">sqliimportlogger.php</a><br>
+<a href="#sqliimportoptions.php">sqliimportoptions.php</a><br>
+<a href="#sqliimportruntimeexception.php">sqliimportruntimeexception.php</a><br>
+<a href="#sqliimporttoken.php">sqliimporttoken.php</a><br>
+<a href="#sqliimportutils.php">sqliimportutils.php</a><br>
+<a href="#sqliimport_cleanup.php">sqliimport_cleanup.php</a><br>
+<a href="#sqliimport_run.php">sqliimport_run.php</a><br>
+<a href="#sqlilocation.php">sqlilocation.php</a><br>
+<a href="#sqlilocationexception.php">sqlilocationexception.php</a><br>
+<a href="#sqlilocationset.php">sqlilocationset.php</a><br>
+<a href="#sqlirssimporthandler.php">sqlirssimporthandler.php</a><br>
+<a href="#sqlischeduledimport.php">sqlischeduledimport.php</a><br>
+<a href="#sqlixmlexception.php">sqlixmlexception.php</a><br>
+<a href="#sqlixmlinputparser.php">sqlixmlinputparser.php</a><br>
+<a href="#sqlixmloptions.php">sqlixmloptions.php</a><br>
+<a href="#sqlixmlparser.php">sqlixmlparser.php</a><br>
+<a href="#xml.php">xml.php</a><br>
+<a name="Post-parsing"></a>
+<h1>Post-parsing</h1>
+<h2>Warnings:</h2><br>
+<b>Warning</b> - Class SQLIXMLInputParser parent eZXMLInputParser not found<br>
+<b>Warning</b> - Class eZPendingActions parent eZPersistentObject not found<br>
+<b>Warning</b> - Class SQLIImportBaseException parent ezcBaseException not found<br>
+<b>Warning</b> - Class SQLIImportOptions parent ezcBaseOptions not found<br>
+<b>Warning</b> - Class SQLIImportItem parent eZPersistentObject not found<br>
+<b>Warning</b> - Class SQLIImportToken parent eZPersistentObject not found<br>
+<b>Warning</b> - Class SQLIScheduledImport parent eZPersistentObject not found<br>
+<a name="addimport.php"></a>
+<h1>addimport.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<a name="addscheduled.php"></a>
+<h1>addscheduled.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<a name="alterimport.php"></a>
+<h1>alterimport.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<a name="content.php"></a>
+<h1>content.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 43</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/stubs/content.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="contentcreate.php"></a>
+<h1>contentcreate.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 35</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/stubs/contentcreate.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="contentremove.php"></a>
+<h1>contentremove.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 20</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/stubs/contentremove.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="cronjob.ini.append.php"></a>
+<h1>cronjob.ini.append.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/settings/cronjob.ini.append.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="csv.php"></a>
+<h1>csv.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 40</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/stubs/csv.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="design.ini.append.php"></a>
+<h1>design.ini.append.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 5</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/settings/design.ini.append.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ezinfo.php"></a>
+<h1>ezinfo.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "sqliimportInfo", use another DocBlock to document the file<br>
+<a name="ezpendingactions.php"></a>
+<h1>ezpendingactions.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class eZPendingActions<br>
+<b>Warning on line 90</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/classes/ezpendingactions.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="fatalerrorhandler.php"></a>
+<h1>fatalerrorhandler.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - Unknown tag "@licence" used<br>
+<a name="isqlidiffhandler.php"></a>
+<h1>isqlidiffhandler.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 25</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 27</b> - no @package tag was used in a DocBlock for interface ISQLIDiffHandler<br>
+<h2>Errors:</h2><br>
+<b>Error on line 25</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage diffhandlers"<br>
+<a name="isqliimporthandler.php"></a>
+<h1>isqliimporthandler.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "ISQLIImportHandler", use another DocBlock to document the file<br>
+<a name="list.php"></a>
+<h1>list.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<a name="menu.ini.append.php"></a>
+<h1>menu.ini.append.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 26</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/settings/menu.ini.append.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="module.ini.append.php"></a>
+<h1>module.ini.append.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/settings/module.ini.append.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="module.php"></a>
+<h1>module.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<a name="purgelist.php"></a>
+<h1>purgelist.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<a name="removescheduled.php"></a>
+<h1>removescheduled.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<a name="scheduledlist.php"></a>
+<h1>scheduledlist.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<a name="scriptinit.php"></a>
+<h1>scriptinit.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 20</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/stubs/scriptinit.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sigtermhandler.php"></a>
+<h1>sigtermhandler.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 37</b> - Page-level DocBlock precedes "function sigHandler", use another DocBlock to document the source element<br>
+<a name="site.ini.append.php"></a>
+<h1>site.ini.append.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 5</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/settings/site.ini.append.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sqlibinaryfilediffhandler.php"></a>
+<h1>sqlibinaryfilediffhandler.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 17</b> - no @package tag was used in a DocBlock for class SQLIBinaryFileDiffHandler<br>
+<h2>Errors:</h2><br>
+<b>Error on line 15</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage diffhandlers"<br>
+<a name="sqlicontent.php"></a>
+<h1>sqlicontent.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 52</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 53</b> - @property magic tag does not have name, illegal. Ignoring tag "@property mixed All "attributes" available from eZContentObject (See )."<br>
+<b>Warning on line 54</b> - no @package tag was used in a DocBlock for class SQLIContent<br>
+<a name="sqlicontentexception.php"></a>
+<h1>sqlicontentexception.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class SQLIContentException<br>
+<a name="sqlicontentfiedset.php"></a>
+<h1>sqlicontentfiedset.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "SQLIContentFieldset", use another DocBlock to document the file<br>
+<a name="sqlicontentfield.php"></a>
+<h1>sqlicontentfield.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class SQLIContentField<br>
+<a name="sqlicontentfieldsetholder.php"></a>
+<h1>sqlicontentfieldsetholder.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "SQLIContentFieldsetHolder", use another DocBlock to document the file<br>
+<a name="sqlicontentoptions.php"></a>
+<h1>sqlicontentoptions.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 16</b> - no @package tag was used in a DocBlock for class SQLIContentOptions<br>
+<h2>Errors:</h2><br>
+<b>Error on line 14</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage options"<br>
+<a name="sqlicontentpublisher.php"></a>
+<h1>sqlicontentpublisher.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for class SQLIContentPublisher<br>
+<a name="sqlicontentpublishoptions.php"></a>
+<h1>sqlicontentpublishoptions.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "SQLIContentPublishOptions", use another DocBlock to document the file<br>
+<a name="sqlicontentutils.php"></a>
+<h1>sqlicontentutils.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class SQLIContentUtils<br>
+<a name="sqlicsvdoc.php"></a>
+<h1>sqlicsvdoc.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 16</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 18</b> - no @package tag was used in a DocBlock for class SQLICSVDoc<br>
+<h2>Errors:</h2><br>
+<b>Error on line 16</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage csv"<br>
+<a name="sqlicsvexception.php"></a>
+<h1>sqlicsvexception.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "SQLICSVException", use another DocBlock to document the file<br>
+<h2>Errors:</h2><br>
+<b>Error on line 12</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage csv"<br>
+<a name="sqlicsvoptions.php"></a>
+<h1>sqlicsvoptions.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "SQLICSVOptions", use another DocBlock to document the file<br>
+<h2>Errors:</h2><br>
+<b>Error on line 12</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage csv"<br>
+<a name="sqlicsvrow.php"></a>
+<h1>sqlicsvrow.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "SQLICSVRow", use another DocBlock to document the file<br>
+<h2>Errors:</h2><br>
+<b>Error on line 12</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage csv"<br>
+<a name="sqlicsvrowset.php"></a>
+<h1>sqlicsvrowset.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "SQLICSVRowSet", use another DocBlock to document the file<br>
+<h2>Errors:</h2><br>
+<b>Error on line 12</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage csv"<br>
+<a name="sqlidefaultdiffhandler.php"></a>
+<h1>sqlidefaultdiffhandler.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 16</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 18</b> - no @package tag was used in a DocBlock for class SQLIDefaultDiffHandler<br>
+<h2>Errors:</h2><br>
+<b>Error on line 16</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage diffhandlers"<br>
+<a name="sqlidoimport.php"></a>
+<h1>sqlidoimport.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Page-level DocBlock precedes "require 'autoload.php'", use another DocBlock to document the source element<br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<a name="sqliimagediffhandler.php"></a>
+<h1>sqliimagediffhandler.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 17</b> - no @package tag was used in a DocBlock for class SQLIImageDiffHandler<br>
+<h2>Errors:</h2><br>
+<b>Error on line 15</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage diffhandlers"<br>
+<a name="sqliimport.ini.append.php"></a>
+<h1>sqliimport.ini.append.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 21</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/settings/sqliimport.ini.append.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sqliimportabstracthandler.php"></a>
+<h1>sqliimportabstracthandler.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "SQLIImportAbstractHandler", use another DocBlock to document the file<br>
+<a name="sqliimportbaseexception.php"></a>
+<h1>sqliimportbaseexception.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "SQLIImportBaseException", use another DocBlock to document the file<br>
+<a name="sqliimportconfigexception.php"></a>
+<h1>sqliimportconfigexception.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class SQLIImportConfigException<br>
+<a name="sqliimportfactory.php"></a>
+<h1>sqliimportfactory.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "SQLIImportFactory", use another DocBlock to document the file<br>
+<a name="sqliimporthandleroptions.php"></a>
+<h1>sqliimporthandleroptions.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 16</b> - no @package tag was used in a DocBlock for class SQLIImportHandlerOptions<br>
+<a name="sqliimportitem.php"></a>
+<h1>sqliimportitem.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class SQLIImportItem<br>
+<a name="sqliimportlogger.php"></a>
+<h1>sqliimportlogger.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "SQLIImportLogger", use another DocBlock to document the file<br>
+<a name="sqliimportoptions.php"></a>
+<h1>sqliimportoptions.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 16</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 18</b> - no @package tag was used in a DocBlock for class SQLIImportOptions<br>
+<a name="sqliimportruntimeexception.php"></a>
+<h1>sqliimportruntimeexception.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class SQLIImportRuntimeException<br>
+<a name="sqliimporttoken.php"></a>
+<h1>sqliimporttoken.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "SQLIImportToken", use another DocBlock to document the file<br>
+<a name="sqliimportutils.php"></a>
+<h1>sqliimportutils.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "SQLIImportUtils", use another DocBlock to document the file<br>
+<a name="sqliimport_cleanup.php"></a>
+<h1>sqliimport_cleanup.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - Unknown tag "@licence" used<br>
+<a name="sqliimport_run.php"></a>
+<h1>sqliimport_run.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Page-level DocBlock precedes "include_once 'extension/sqliimport/modules/sqliimport/sigtermhandler.php'", use another DocBlock to document the source element<br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<a name="sqlilocation.php"></a>
+<h1>sqlilocation.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "SQLILocation", use another DocBlock to document the file<br>
+<a name="sqlilocationexception.php"></a>
+<h1>sqlilocationexception.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 15</b> - no @package tag was used in a DocBlock for class SQLILocationException<br>
+<a name="sqlilocationset.php"></a>
+<h1>sqlilocationset.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "SQLILocationSet", use another DocBlock to document the file<br>
+<a name="sqlirssimporthandler.php"></a>
+<h1>sqlirssimporthandler.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 12</b> - DocBlock would be page-level, but precedes class "SQLIRSSImportHandler", use another DocBlock to document the file<br>
+<a name="sqlischeduledimport.php"></a>
+<h1>sqlischeduledimport.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "SQLIScheduledImport", use another DocBlock to document the file<br>
+<a name="sqlixmlexception.php"></a>
+<h1>sqlixmlexception.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "SQLIXMLException", use another DocBlock to document the file<br>
+<h2>Errors:</h2><br>
+<b>Error on line 12</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage xml"<br>
+<a name="sqlixmlinputparser.php"></a>
+<h1>sqlixmlinputparser.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 11</b> - Page-level DocBlock precedes "require_once 'kernel/common/i18n.php'", use another DocBlock to document the source element<br>
+<b>Warning on line 19</b> - no @package tag was used in a DocBlock for class SQLIXMLInputParser<br>
+<a name="sqlixmloptions.php"></a>
+<h1>sqlixmloptions.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "SQLIXMLOptions", use another DocBlock to document the file<br>
+<h2>Errors:</h2><br>
+<b>Error on line 12</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage xml"<br>
+<a name="sqlixmlparser.php"></a>
+<h1>sqlixmlparser.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - Unknown tag "@licence" used<br>
+<b>Warning on line 13</b> - DocBlock would be page-level, but precedes class "SQLIXMLParser", use another DocBlock to document the file<br>
+<h2>Errors:</h2><br>
+<b>Error on line 12</b> - DocBlock has multiple @subpackage tags, illegal. ignoring additional tag "@subpackage xml"<br>
+<a name="xml.php"></a>
+<h1>xml.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 55</b> - File "/Users/lolautruche/workspace/EZ Publish extensions/sqliimport/ant/build/_dist/sqliimport/stubs/xml.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Mon, 27 Sep 2010 16:39:18 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
