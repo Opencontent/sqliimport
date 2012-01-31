@@ -45,6 +45,5 @@ CREATE INDEX sqliimport_item_handler ON sqliimport_item USING btree (handler);
 CREATE INDEX sqliimport_item_user_id ON sqliimport_item USING btree (user_id);
 CREATE INDEX sqliimport_item_status ON sqliimport_item USING btree (status);
 CREATE INDEX sqliimport_item_scheduled_id ON sqliimport_item USING btree (scheduled_id);
-ALTER TABLE ONLY sqliimport_scheduled ADD CONSTRAINT sqliimport_scheduled_pkey PRIMARY KEY (id);
 
 
