@@ -136,7 +136,18 @@ class SQLIScheduledImport extends eZPersistentObject
     public function getOptions()
     {
         if ( !$this->options instanceof SQLIImportHandlerOptions && $this->attribute( 'options_serialized' ) )
-            $this->options = unserialize( $this->attribute( 'options_serialized' ) );
+        {
+            $ini = eZINI::instance();
+            if ( $ini->variable( 'DatabaseSettings', 'DatabaseImplementation' ) == 'ezpostgresql' )
+            {
+                $serialized = str_replace( "~~NULL_BYTE~~", "\0", $this->attribute( 'options_serialized' ) );
+                $this->options = unserialize( $serialized ); 
+            }
+            else
+            {
+                $this->options = unserialize( $this->attribute( 'options_serialized' ) );
+            }
+        }
         else
             $this->options = new SQLIImportHandlerOptions();
             
@@ -150,7 +161,17 @@ class SQLIScheduledImport extends eZPersistentObject
     public function setOptions( SQLIImportHandlerOptions $options )
     {
         $this->options = $options;
-        $this->setAttribute( 'options_serialized', serialize( $options ) );
+        $ini = eZINI::instance();
+        if ( $ini->variable( 'DatabaseSettings', 'DatabaseImplementation' ) == 'ezpostgresql' )
+        {
+            $serialized = serialize( $options );
+            $safeSerialized = str_replace( "\0", "~~NULL_BYTE~~", $serialized );
+            $this->setAttribute( 'options_serialized', $safeSerialized );
+        }
+        else
+        {
+            $this->setAttribute( 'options_serialized', serialize( $options ) );
+        }
     }
     
     /**

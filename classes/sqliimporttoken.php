@@ -16,14 +16,14 @@ class SQLIImportToken extends eZPersistentObject
 
     const STATUS_FIELD_NAME = 'sqliimport_status',
           CURRENT_HANDLER_FIELD_NAME = 'sqliimport_current_handler';
-    
+
     /**
      * Flag indicating if current script is launched by SQLIImport or not.
      * Useful to identify import scripts in workflow eventtypes
      * @var bool
      */
      private static $isImportScript = false;
-    
+
     /**
      * Schema definition
      * eZPersistentObject implementation for native table ezsite_data
@@ -36,36 +36,39 @@ class SQLIImportToken extends eZPersistentObject
                                                                               'datatype' => 'string',
                                                                               'default'  => null,
                                                                               'required' => true ),
-        
+
                                                'value'              => array( 'name'     => 'value',
                                                                               'datatype' => 'string',
                                                                               'default'  => null,
                                                                               'required' => true ),
-        
+
                                             ),
-                                            
+
                      'keys'                 => array( 'name' ),
                      'class_name'           => 'SQLIImportToken',
                      'name'                 => 'ezsite_data',
                      'function_attributes'  => array()
         );
     }
-    
+
     /**
      * Checks if an import is already running
      * @return bool
      */
     public static function importIsRunning()
     {
+
+	self::cleanAll();
+
         $conds = array(
             'name'  => self::STATUS_FIELD_NAME,
             'value' => self::IMPORT_STATUS_RUNNING
         );
         $statusCount = parent::count( self::definition(), $conds );
-        
+
         return $statusCount > 0;
     }
-    
+
     /**
      * Checks if an import is pending (waiting to start)
      * @return bool
@@ -77,10 +80,10 @@ class SQLIImportToken extends eZPersistentObject
             'value' => self::IMPORT_STATUS_PENDING
         );
         $statusCount = parent::count( self::definition(), $conds );
-        
+
         return $statusCount > 0;
     }
-    
+
     /**
      * Registers a new import process. Must be called before running an import to avoid several imports running at a time
      * @param int $status Status of the import. Default is SQLIImportToken::IMPORT_STATUS_RUNNING
@@ -92,13 +95,13 @@ class SQLIImportToken extends eZPersistentObject
             'name'  => self::STATUS_FIELD_NAME,
             'value' => $status
         );
-        
+
         $token = new self( $row );
         $token->store();
-        
+
         return $token;
     }
-    
+
     /**
      * Fetches current token
      * @return SQLIImportToken or null if none registered
@@ -108,7 +111,7 @@ class SQLIImportToken extends eZPersistentObject
         $token = parent::fetchObject( self::definition(), null, array( 'name' => self::STATUS_FIELD_NAME ) );
         return $token;
     }
-    
+
     /**
      * Registers import handler that is currently processed
      * @param string $handlerName
@@ -117,7 +120,7 @@ class SQLIImportToken extends eZPersistentObject
     {
         // First check if a current handler is already registered
         $handlerToken = parent::fetchObject( self::definition(), null, array( 'name' => self::CURRENT_HANDLER_FIELD_NAME ) );
-        
+
         if( $handlerToken instanceof SQLIImportToken )
         {
             $handlerToken->setAttribute( 'value', $handlerName );
@@ -132,7 +135,7 @@ class SQLIImportToken extends eZPersistentObject
             $handlerToken->store();
         }
     }
-    
+
     /**
      * Cleans current import handler (when all import processes has been executed for example)
      */
@@ -143,7 +146,7 @@ class SQLIImportToken extends eZPersistentObject
         );
         parent::removeObject( self::definition(), $conds );
     }
-    
+
     /**
      * Cleans import token
      */
@@ -154,7 +157,7 @@ class SQLIImportToken extends eZPersistentObject
         );
         parent::removeObject( self::definition(), $conds );
     }
-    
+
     /**
      * Cleans up tokens
      */
@@ -162,7 +165,7 @@ class SQLIImportToken extends eZPersistentObject
     {
         self::cleanImportToken();
     }
-    
+
     /**
      * Indicates if current script is launched by SQLIImport or not.
      * Useful to identify import scripts in workflow eventtypes
@@ -172,7 +175,7 @@ class SQLIImportToken extends eZPersistentObject
     {
         return self::$isImportScript;
     }
-    
+
     /**
      * Sets {@link self::$isImportScript}
      * @param bool $val

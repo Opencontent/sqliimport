@@ -22,7 +22,7 @@ class SQLIImageDiffHandler implements ISQLIDiffHandler
      */
     public static function contentIsModified( $data, eZContentObjectAttribute $attribute )
     {
-        $isModified = false;
+		$isModified = false;
         
         $imageHandler = $attribute->attribute( 'content' );
         $originalFilename = $imageHandler->attribute( 'original_filename' );
